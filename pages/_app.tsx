@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import {createTheme, NextUIProvider} from '@nextui-org/react';
 import React from 'react';
+import {Head} from 'next/document';
 
 declare global {
   namespace JSX {
@@ -22,8 +23,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   })
 
   return (
-
     <NextUIProvider theme={theme}>
+      <Head>
+        <title>Daniel Wennemar</title>
+        <script async src="https://cdn.splitbee.io/sb.js"/>
+      </Head>
       <Component {...pageProps} />
     </NextUIProvider>
   );
