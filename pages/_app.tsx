@@ -2,15 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import {createTheme, NextUIProvider} from '@nextui-org/react';
 import React from 'react';
-import {Head} from 'next/document';
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "box-icons": React.DetailedHTMLProps<React.HtmlHTMLAttributes<HTMLElement>, HTMLElement>
-    }
-  }
-}
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const theme = createTheme({
@@ -23,13 +15,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   })
 
   return (
-    <NextUIProvider theme={theme}>
-      <Head>
-        <title>Daniel Wennemar</title>
-        <script async src="https://cdn.splitbee.io/sb.js"/>
-      </Head>
-      <Component {...pageProps} />
-    </NextUIProvider>
+    <>
+      <Script id="splitbee-cdn" async src="https://cdn.splitbee.io/sb.js"/>
+      <NextUIProvider theme={theme}>
+        <Component {...pageProps} />
+      </NextUIProvider>
+    </>
   );
 }
 
