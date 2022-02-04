@@ -26,7 +26,7 @@ export default function PlatformChip(props: { platform: string, icon: IconProp, 
     >
       <FontAwesomeIcon icon={props.icon}/>
       <span>&nbsp;</span>
-      <Link href={props.link}>
+      <Link href={props.link} passHref>
         <NextLink css={{color: '#dcdcdc'}}>
           {props.platform}
         </NextLink>

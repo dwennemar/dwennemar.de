@@ -77,7 +77,7 @@ const Home: NextPage = () => {
         justifyContent: 'center',
         margin: '1rem 0',
       }}>
-        <Link href={"/legal-notice"}>
+        <Link href={"/legal-notice"} passHref>
           <NextLink>Legal Notice</NextLink>
         </Link>
       </Text>
