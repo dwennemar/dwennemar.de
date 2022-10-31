@@ -3,11 +3,43 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+	<div class="socials">
+		<span class="social-element"><a href="https://github.com/dwennemar">GitHub</a></span>
+		<span class="social-element"><a href="https://gitlab.com/dwennemar">GitLab</a></span>
+		<span class="social-element"><a href="https://linkedin.com/in/dwennemar">LinkedIn</a></span>
+		<span class="social-element"><a href="https://xing.com/profile/Daniel_Wennemar">Xing</a></span>
+		<span class="social-element"><a href="https://dev.to/dawed">DEV</a></span>
+		<span class="social-element"><a href="https://medium.com/@dwennemar">medium</a></span>
+	</div>
+	<p>&copy; {today.getFullYear()} Daniel Wennemar. All rights reserved.</p>
 </footer>
 <style>
 	footer {
 		padding: 25px;
 		text-align: center;
+	}
+
+	.socials {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;	
+	}
+	.social-element {
+		margin: .5rem;
+		text-align: center;
+	}
+
+	.social-element > a {
+		text-decoration: none;
+		padding: .75ex 1ex;
+		text-align: center;
+	}
+
+	.social-element > a:hover {
+		background-color: dodgerblue;
+		border-radius: 1rem;
+		color: #fff;
 	}
 </style>

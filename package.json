@@ -11,9 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.6.0",
     "@astrojs/mdx": "^0.11.5",
     "@astrojs/rss": "^1.0.3",
-    "@astrojs/sitemap": "^1.0.0"
+    "@astrojs/sitemap": "^1.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "astro": "^1.6.0"
   }
 }
