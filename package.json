@@ -1,26 +1,19 @@
 {
-  "name": "dwennemar.de",
+  "name": "@example/blog",
+  "type": "module",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@nextui-org/react": "^1.0.0-beta.10",
-    "next": "^12.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.8.3",
-    "@types/react": "^18.0.21",
-    "eslint": "^8.24.0",
-    "eslint-config-next": "^12.3.1",
-    "typescript": "^4.8.4"
+    "astro": "^1.6.0",
+    "@astrojs/mdx": "^0.11.5",
+    "@astrojs/rss": "^1.0.3",
+    "@astrojs/sitemap": "^1.0.0"
   }
 }
